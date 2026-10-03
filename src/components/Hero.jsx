@@ -4,85 +4,94 @@ function Hero() {
       <div className="container">
         <div className="row align-items-center min-vh-100">
 
-          {/* Hero Content */}
+          {/* Left Content */}
           <div className="col-lg-7">
 
-            <p className="hero-subtitle mb-3">
-              Hi, I'm
-            </p>
+            <div className="hero-content">
 
-            <h1 className="display-2 fw-bold mb-3">
-              Mehedi Hasan
-            </h1>
+              <p className="hero-greeting">
+                Hi, I'm
+              </p>
 
-            <h2 className="hero-title mb-4">
-              Web Developer
-            </h2>
+              <h1 className="hero-name">
+                Mehedi Hasan
+              </h1>
 
-            <p className="lead text-secondary mb-4">
-              I build modern, responsive and user-friendly
-              web applications using React, Python and Django.
-            </p>
+              <h2 className="hero-role">
+                Full Stack Web Developer
+              </h2>
 
-            {/* Buttons */}
-            <div className="d-flex flex-wrap gap-3">
+              <p className="hero-description">
+                I build modern, responsive and user-friendly
+                web applications using React, Python and Django.
+              </p>
 
-              <a
-                href="#projects"
-                className="btn btn-primary btn-lg px-4"
-              >
-                View My Work
-              </a>
+              {/* Buttons */}
+              <div className="hero-buttons">
 
-              <a
-                href="/Mehedi_Hasan_CV.pdf"
-                className="btn btn-outline-light btn-lg px-4"
-                download
-              >
-                Download CV
-              </a>
+                <a
+                  href="#projects"
+                  className="btn btn-primary hero-btn"
+                >
+                  View My Work
+                </a>
 
-            </div>
+                <a
+                  href="/Mehedi_Hasan_CV.pdf"
+                  className="btn btn-outline-light hero-btn"
+                  download
+                >
+                  Download CV
+                </a>
 
-            {/* Social Links */}
-            <div className="social-links mt-5">
+              </div>
 
-              <a
-                href="https://github.com/mehedi3635"
-                target="_blank"
-                rel="noreferrer"
-                className="text-decoration-none me-4"
-              >
-                GitHub
-              </a>
+              {/* Social Links */}
+              <div className="hero-social">
 
-              <a
-                href="https://www.linkedin.com/in/mehedi-hassan3635/"
-                target="_blank"
-                rel="noreferrer"
-                className="text-decoration-none me-4"
-              >
-                LinkedIn
-              </a>
+                <a
+                  href="https://github.com/mehedi3635"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
 
-              <a
-                href="mailto:mh95211@gmail.com"
-                className="text-decoration-none"
-              >
-                Email
-              </a>
+                <span>•</span>
+
+                <a
+                  href="https://www.linkedin.com/in/mehedi-hassan3635/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+
+                <span>•</span>
+
+                <a href="mailto:mh95211@gmail.com">
+                  Email
+                </a>
+
+              </div>
 
             </div>
 
           </div>
 
-          {/* Profile Image */}
-          <div className="col-lg-5 text-center mt-5 mt-lg-0">
+          {/* Right Side */}
+          <div className="col-lg-5">
 
             <div className="hero-image-wrapper">
 
-              <div className="hero-image-placeholder">
-                MH
+              <div className="hero-image-ring">
+
+                <img
+                  src="/profile.jpg"
+                  alt="Mehedi Hasan"
+                  className="hero-profile-image"
+                />
+
               </div>
 
             </div>
