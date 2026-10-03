@@ -49,6 +49,15 @@ function Navbar() {
                 About
               </a>
             </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#education"
+                onClick={closeMenu}
+              >
+                Education
+              </a>
+            </li>
 
             <li className="nav-item">
               <a
