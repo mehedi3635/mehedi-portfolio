@@ -1,12 +1,13 @@
 function Footer() {
   return (
-    <footer className="footer-section">
+    <footer className="footer-section py-4">
+
       <div className="container">
 
-        <div className="row align-items-center py-4">
+        <div className="row align-items-center">
 
-          {/* Brand */}
-          <div className="col-md-6 text-center text-md-start">
+          <div className="col-md-6">
+
             <a
               href="#home"
               className="footer-brand"
@@ -17,12 +18,13 @@ function Footer() {
             <p className="text-secondary mb-0 mt-2">
               Web Developer | React | Python | Django
             </p>
+
           </div>
 
-          {/* Social Links */}
-          <div className="col-md-6 mt-3 mt-md-0">
 
-            <div className="footer-social text-center text-md-end">
+          <div className="col-md-6">
+
+            <div className="footer-social">
 
               <a
                 href="https://github.com/mehedi3635"
@@ -33,7 +35,7 @@ function Footer() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/mehedi-hassan3635/"
+                href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -50,17 +52,19 @@ function Footer() {
 
         </div>
 
-        <hr className="footer-divider" />
+        <hr className="footer-divider my-4" />
 
-        <div className="text-center py-3">
+        <div className="text-center">
 
           <p className="text-secondary mb-0">
-            © 2026 Mehedi Hasan. All Rights Reserved.
+            © {new Date().getFullYear()} Mehedi Hasan.
+            All Rights Reserved.
           </p>
 
         </div>
 
       </div>
+
     </footer>
   );
 }

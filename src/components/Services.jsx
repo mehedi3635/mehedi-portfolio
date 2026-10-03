@@ -4,25 +4,25 @@ function Services() {
       icon: "</>",
       title: "Web Design",
       description:
-        "Modern and clean website designs with responsive layouts and user-friendly interfaces.",
+        "Modern, clean and responsive websites designed with a focus on usability and performance.",
     },
     {
       icon: "⚛",
       title: "React Development",
       description:
-        "Interactive and responsive web applications built with React.js and modern frontend practices.",
+        "Interactive and responsive web applications built with React.js and modern frontend technologies.",
     },
     {
       icon: "Py",
       title: "Django Development",
       description:
-        "Secure and scalable backend applications using Python and Django.",
+        "Secure and scalable backend applications built with Python and Django.",
     },
     {
       icon: "API",
       title: "REST API Development",
       description:
-        "Build and integrate REST APIs using Django REST Framework for modern web applications.",
+        "RESTful APIs developed using Django REST Framework for modern web applications.",
     },
     {
       icon: "↔",
@@ -53,9 +53,9 @@ function Services() {
             My Services
           </h2>
 
-          <p className="text-secondary mt-3">
-            I help businesses and individuals build modern,
-            responsive and functional web applications.
+          <p className="section-description">
+            I build modern, responsive and user-friendly
+            web solutions for individuals and businesses.
           </p>
 
         </div>
@@ -68,7 +68,6 @@ function Services() {
               className="col-md-6 col-lg-4"
               key={index}
             >
-
               <div className="service-card h-100">
 
                 <div className="service-icon">
@@ -79,12 +78,11 @@ function Services() {
                   {service.title}
                 </h3>
 
-                <p className="text-secondary mb-0">
+                <p>
                   {service.description}
                 </p>
 
               </div>
-
             </div>
           ))}
 

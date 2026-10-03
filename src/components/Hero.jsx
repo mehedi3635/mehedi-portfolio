@@ -1,10 +1,13 @@
 function Hero() {
   return (
     <section id="home" className="hero-section">
-      <div className="container">
-        <div className="row align-items-center min-vh-100">
 
-          {/* Left Content */}
+      <div className="container">
+
+        <div className="row align-items-center">
+
+          {/* Hero Content */}
+
           <div className="col-lg-7">
 
             <div className="hero-content">
@@ -18,7 +21,7 @@ function Hero() {
               </h1>
 
               <h2 className="hero-role">
-                Full Stack Web Developer
+                Web Developer
               </h2>
 
               <p className="hero-description">
@@ -26,7 +29,9 @@ function Hero() {
                 web applications using React, Python and Django.
               </p>
 
+
               {/* Buttons */}
+
               <div className="hero-buttons">
 
                 <a
@@ -37,7 +42,7 @@ function Hero() {
                 </a>
 
                 <a
-                  href="/Mehedi_Hasan_CV.pdf"
+                  href="/Mehedi-Hasan-CV.pdf"
                   className="btn btn-outline-light hero-btn"
                   download
                 >
@@ -46,7 +51,9 @@ function Hero() {
 
               </div>
 
+
               {/* Social Links */}
+
               <div className="hero-social">
 
                 <a
@@ -57,17 +64,17 @@ function Hero() {
                   GitHub
                 </a>
 
-                <span>•</span>
+                <span>|</span>
 
                 <a
-                  href="https://www.linkedin.com/in/mehedi-hassan3635/"
+                  href="https://www.linkedin.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   LinkedIn
                 </a>
 
-                <span>•</span>
+                <span>|</span>
 
                 <a href="mailto:mh95211@gmail.com">
                   Email
@@ -79,7 +86,9 @@ function Hero() {
 
           </div>
 
-          {/* Right Side */}
+
+          {/* Hero Image */}
+
           <div className="col-lg-5">
 
             <div className="hero-image-wrapper">
@@ -99,7 +108,9 @@ function Hero() {
           </div>
 
         </div>
+
       </div>
+
     </section>
   );
 }

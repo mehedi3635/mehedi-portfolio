@@ -3,79 +3,91 @@ function Projects() {
     {
       title: "Django E-commerce",
       description:
-        "A full-featured e-commerce application with product browsing, authentication, cart and order management.",
-      technologies: ["Python", "Django", "MySQL", "Bootstrap"],
+        "A full-stack e-commerce web application with product browsing, authentication, cart management and order functionality.",
+      tech: ["Python", "Django", "SQLite", "Bootstrap"],
       github: "https://github.com/mehedi3635/E-commerce-",
       live: "#",
     },
+
     {
       title: "Hospital Management System",
       description:
-        "A role-based hospital management system designed for administrators, doctors, patients and receptionists.",
-      technologies: ["Python", "Django", "DRF", "MySQL"],
+        "A role-based hospital management system with separate functionality for admin, doctor, patient and receptionist.",
+      tech: ["Python", "Django", "DRF", "PostgreSQL"],
       github: "#",
       live: "#",
     },
+
     {
       title: "Student Dashboard",
       description:
-        "A responsive React dashboard interface for managing and displaying student information.",
-      technologies: ["React.js", "JavaScript", "Bootstrap"],
+        "A responsive React dashboard for managing and displaying student-related information with reusable components.",
+      tech: ["React", "JavaScript", "Bootstrap"],
       github: "#",
       live: "#",
     },
+
     {
       title: "Mini Task Manager",
       description:
-        "A task management application using React and a REST API for creating and managing tasks.",
-      technologies: ["React.js", "JavaScript", "REST API"],
+        "A task management application built with React and JSONPlaceholder API for handling and displaying task data.",
+      tech: ["React", "JavaScript", "REST API"],
       github: "#",
       live: "#",
     },
+
     {
       title: "Shopping Cart",
       description:
-        "A responsive shopping cart application built with React for managing products and cart items.",
-      technologies: ["React.js", "JavaScript", "Bootstrap"],
+        "A responsive shopping cart application built with React featuring product selection, cart management and price calculation.",
+      tech: ["React", "JavaScript", "Bootstrap"],
       github: "#",
       live: "#",
     },
+
     {
-      title: "React Router Project",
+      title: "Personal Portfolio",
       description:
-        "A React application demonstrating client-side routing and navigation between different pages.",
-      technologies: ["React.js", "React Router", "Bootstrap"],
+        "A modern responsive developer portfolio built with React and Bootstrap to showcase skills, experience and projects.",
+      tech: ["React", "Bootstrap", "Vite"],
       github: "#",
       live: "#",
     },
   ];
 
   return (
-    <section id="projects" className="projects-section py-5">
+    <section
+      id="projects"
+      className="projects-section py-5"
+    >
       <div className="container py-5">
 
         {/* Section Header */}
+
         <div className="text-center mb-5">
 
           <p className="section-subtitle">
-            MY PROJECTS
+            MY WORK
           </p>
 
           <h2 className="section-title">
             Featured Projects
           </h2>
 
-          <p className="text-secondary mt-3">
-            Some of the projects I have built while
-            learning and practicing web development.
+          <p className="section-description">
+            Some of the projects I have built while learning
+            and developing my skills.
           </p>
 
         </div>
 
-        {/* Project Cards */}
+
+        {/* Projects */}
+
         <div className="row g-4">
 
           {projects.map((project, index) => (
+
             <div
               className="col-md-6 col-lg-4"
               key={index}
@@ -83,55 +95,72 @@ function Projects() {
 
               <div className="project-card h-100">
 
-                {/* Image Placeholder */}
+                {/* Project Image */}
+
                 <div className="project-image">
-                  <span>Project {index + 1}</span>
+
+                  <span>
+                    {project.title}
+                  </span>
+
                 </div>
 
-                {/* Content */}
+
+                {/* Project Content */}
+
                 <div className="project-content">
 
                   <h3>
                     {project.title}
                   </h3>
 
-                  <p className="text-secondary">
+                  <p>
                     {project.description}
                   </p>
 
+
                   {/* Technologies */}
+
                   <div className="project-tech">
 
-                    {project.technologies.map(
+                    {project.tech.map(
                       (technology, techIndex) => (
+
                         <span key={techIndex}>
                           {technology}
                         </span>
+
                       )
                     )}
 
                   </div>
 
+
                   {/* Buttons */}
-                  <div className="project-buttons mt-4">
 
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="btn btn-outline-light btn-sm me-2"
-                    >
-                      GitHub
-                    </a>
+                  <div className="project-buttons mt-4 gap-2">
 
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="btn btn-primary btn-sm"
-                    >
-                      Live Demo
-                    </a>
+                    {project.github !== "#" && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="btn btn-outline-light btn-sm"
+                      >
+                        GitHub
+                      </a>
+                    )}
+
+                    {project.live !== "#" && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="btn btn-primary btn-sm"
+                      >
+                        Live Demo
+                      </a>
+                    )}
 
                   </div>
 
@@ -140,6 +169,7 @@ function Projects() {
               </div>
 
             </div>
+
           ))}
 
         </div>
