@@ -335,6 +335,81 @@ body {
 .service-card p {
   line-height: 1.7;
 }
+
+/* Contact */
+.contact-section {
+  background-color: #111827;
+}
+
+.contact-info {
+  background-color: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 15px;
+  padding: 35px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.contact-icon {
+  min-width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #0d6efd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.contact-item h5 {
+  margin-bottom: 5px;
+}
+
+.contact-item a {
+  color: #adb5bd;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.contact-item a:hover {
+  color: #0d6efd;
+}
+
+.contact-form {
+  background-color: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 15px;
+  padding: 35px;
+}
+
+.contact-form .form-label {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.contact-form .form-control {
+  background-color: #0d1117;
+  border: 1px solid #21262d;
+  color: #ffffff;
+  padding: 12px 15px;
+}
+
+.contact-form .form-control:focus {
+  background-color: #0d1117;
+  color: #ffffff;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+.contact-form .form-control::placeholder {
+  color: #6c757d;
+}
 @media (max-width: 768px) {
   .hero-section {
     text-align: center;
