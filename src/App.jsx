@@ -1,29 +1,19 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Skills from './components/Skills'
-import Experience from './components/Experience'
-import Education from './components/Education'
-import Projects from './components/Projects'
-import Services from './components/Services'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Education />
-      <Projects />
-      <Services />
-      <Contact />
-      <Footer />
+
+      <section
+        id="home"
+        style={{ height: "100vh" }}
+        className="d-flex align-items-center justify-content-center"
+      >
+        <h1>Mehedi Hasan Portfolio</h1>
+      </section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
