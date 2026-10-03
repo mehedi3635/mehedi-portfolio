@@ -8,15 +8,19 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
       <div className="container">
 
-        {/* Logo */}
-        <a className="navbar-brand fw-bold fs-4" href="#home">
-          Mehedi<span className="text-primary">.</span>
+        {/* Brand */}
+        <a
+          className="navbar-brand custom-brand"
+          href="#home"
+          onClick={closeMenu}
+        >
+          Mehedi<span>.</span>
         </a>
 
-        {/* Mobile Toggle */}
+        {/* Mobile Button */}
         <button
           className="navbar-toggler"
           type="button"
@@ -27,8 +31,12 @@ function Navbar() {
         </button>
 
         {/* Navigation */}
-        <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}>
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+        <div
+          className={`collapse navbar-collapse ${
+            isOpen ? "show" : ""
+          }`}
+        >
+          <ul className="navbar-nav ms-auto align-items-lg-center">
 
             <li className="nav-item">
               <a
@@ -47,15 +55,6 @@ function Navbar() {
                 onClick={closeMenu}
               >
                 About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#education"
-                onClick={closeMenu}
-              >
-                Education
               </a>
             </li>
 
@@ -78,13 +77,14 @@ function Navbar() {
                 Experience
               </a>
             </li>
+
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#services"
+                href="#education"
                 onClick={closeMenu}
               >
-                Services
+                Education
               </a>
             </li>
 
@@ -101,25 +101,26 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-link"
+                href="#services"
+                onClick={closeMenu}
+              >
+                Services
+              </a>
+            </li>
+
+            <li className="nav-item ms-lg-3">
+              <a
+                className="nav-link contact-nav-btn"
                 href="#contact"
                 onClick={closeMenu}
               >
-                Contact
+                Let's Talk
               </a>
             </li>
 
           </ul>
-
-          {/* Contact Button */}
-          <a
-            href="#contact"
-            className="btn btn-primary ms-lg-3"
-            onClick={closeMenu}
-          >
-            Let's Talk
-          </a>
-
         </div>
+
       </div>
     </nav>
   );

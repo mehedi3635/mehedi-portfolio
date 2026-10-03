@@ -8,8 +8,102 @@ body {
   background-color: #0d1117;
   color: #ffffff;
 }
+/* =========================
+   NAVBAR
+========================= */
 
-/* hero_sections */
+.custom-navbar {
+  background: rgba(13, 17, 23, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 15px 0;
+}
+
+.custom-brand {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #ffffff !important;
+  letter-spacing: -0.5px;
+}
+
+.custom-brand span {
+  color: #0d6efd;
+}
+
+.custom-navbar .nav-link {
+  color: #adb5bd !important;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.custom-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 2px;
+  height: 2px;
+  background-color: #0d6efd;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.contact-nav-btn {
+  border: 1px solid #0d6efd;
+  border-radius: 7px;
+  padding: 8px 18px !important;
+  color: #ffffff !important;
+}
+
+.contact-nav-btn:hover {
+  background-color: #0d6efd;
+}
+
+.contact-nav-btn::after {
+  display: none;
+}
+
+.navbar-toggler {
+  border: 1px solid #343a40;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+
+  .custom-navbar .navbar-collapse {
+    background-color: #111827;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #21262d;
+  }
+
+  .custom-navbar .nav-link {
+    margin: 5px 0;
+    padding: 10px 5px;
+  }
+
+  .contact-nav-btn {
+    display: inline-block;
+    margin-top: 8px !important;
+  }
+}
+
 /* =========================
    HERO SECTION
 ========================= */
@@ -546,41 +640,6 @@ body {
   margin: 0;
 }
 
-/* hero_Image */
 
 
-@media (max-width: 768px) {
-  .hero-profile-image {
-    width: 240px;
-    height: 240px;
-  }
-}
 
-@media (max-width: 768px) {
-  .footer-social {
-    justify-content: center;
-  }
-}
-@media (max-width: 768px) {
-  .hero-section {
-    text-align: center;
-  }
-
-  .display-2 {
-    font-size: 3rem;
-  }
-
-  .hero-title {
-    font-size: 1.6rem;
-  }
-
-  .hero-image-placeholder {
-    width: 240px;
-    height: 240px;
-    font-size: 4rem;
-  }
-
-  .social-links {
-    margin-bottom: 30px;
-  }
-}
