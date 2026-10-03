@@ -78,6 +78,15 @@ function Navbar() {
                 Experience
               </a>
             </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#services"
+                onClick={closeMenu}
+              >
+                Services
+              </a>
+            </li>
 
             <li className="nav-item">
               <a
